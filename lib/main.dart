@@ -3,6 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:sign_up_login/login_page.dart';
 import 'package:sign_up_login/home_page.dart';
+import 'package:sign_up_login/sign_up.dart';
+//import 'package:sign_up_login/sign_up.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -41,8 +43,8 @@ class MyApp extends StatelessWidget {
             if (snapshot.hasData) {
               return HomePage();
             } else {
-              //return SignUp();
-              return LoginPage();
+              return SignUp();
+              //return LoginPage();
             }
           }),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
